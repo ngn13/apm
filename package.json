@@ -1,0 +1,29 @@
+{
+  "name": "apm",
+  "version": "1.0.0",
+  "description": "A command-line password manager",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngn13/apm.git"
+  },
+  "keywords": [
+    "password",
+    "manager",
+    "CLI"
+  ],
+  "author": "ngn13",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngn13/apm/issues"
+  },
+  "homepage": "https://github.com/ngn13/apm#readme",
+  "dependencies": {
+    "inquirer": "^9.1.4",
+    "nanospinner": "^1.1.0"
+  }
+}
