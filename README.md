@@ -7,5 +7,5 @@ npx apassm
 ```
 ## Optional: Create Alias
 ```
-echo "alias apm=npx apassm" >> ~/.zshrc
+echo 'alias apm="npx apassm"' >> ~/.zshrc
 ```
