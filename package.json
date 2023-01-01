@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/ngn13/apm#readme",
   "dependencies": {
-    "inquirer": "^9.1.4",
-    "nanospinner": "^1.1.0"
+    "chalk": "^5.2.0"
   }
 }
