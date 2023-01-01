@@ -1,12 +1,13 @@
 {
-  "name": "apm",
-  "version": "1.0.0",
+  "name": "apassm",
+  "version": "1.0.1",
   "description": "A command-line password manager",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index"
   },
+  "bin": "./index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ngn13/apm.git"
