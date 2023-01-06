@@ -32,11 +32,25 @@ function runCmd(master){
 			process.exit()
 		}
 
-		if(args.length > func[1]){
-			log.error("Too mant arguments for: " + func[0].name)
-			process.exit()
+		if(func[2]===null){
+			if(args.length > func[1]){
+				log.error("Too mant arguments for: " + func[0].name)
+				process.exit()
+			}
+		}else{
+			if(args.length > func[1]+1){
+				log.error("Too mant arguments for: " + func[0].name)
+				process.exit()
+			}
 		}
-		func[0](apm, log, args.slice(1))
+
+		if(func[2]===1){
+			args = args.slice(1)
+			let op = args.slice(args.length-1)
+			func[0](apm, log, (args.slice(1)).slice(a), func[2]=op)
+		}else{
+			func[0](apm, log, args.slice(1))
+		}
 
 	}else{
 		log.error("Command not found: " + args[0])
